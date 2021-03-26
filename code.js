@@ -1,14 +1,16 @@
 // helloWorld function 
-function helloWorld() {
+// function helloWorld() {
+//     return "Hello, World!";
+// }
+
+// function expression syntax (assigning an anonymous function to a variable)
+const helloWorld = function() {
     return "Hello, World!";
 }
 
-// addOne
-
-// function addOne(input) {
-//     if (typeof input !== "number"){
-//         return NaN;
-//     } else {
-//         return input+1;
-//     }
+// // function statement syntax
+// function helloWorld() {
+//     return "Hello, World!";
 // }
+
+
