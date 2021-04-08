@@ -1,4 +1,4 @@
-"use strict"
+
 // Unit tests for the helloWorld function
 describe('helloWorld', function() {
     it('should be a defined function', function() {
@@ -17,6 +17,7 @@ describe('helloWorld', function() {
 
 
 describe('sayHello',function (){
+    //
     it ('should be a defined function', function (){
         expect(typeof sayHello).toBe('function');
     });
@@ -32,10 +33,25 @@ describe('sayHello',function (){
     it ('Should return the string "Hello, Pat!" when passed Pat', function (){
         expect(sayHello("Pat")).toBe("Hello, Pat!");
     });
-    it ()
+
 
 });
 
+describe('isFive',function (){
+   it('Should be a defined function', function (){
+       expect(typeof isFive).toBe('function');
+   });
+   it('Should be returning a boolean no matter what', function (){
+      expect(isFive()).toBe("boolean");
+   });
+   it('If passed the string "5", should return false.',function (){
+      expect(isFive("5")).toBe(false);
+   });
+   it ('if passed the number 5, should return true',function (){
+      expect(isFive(5)).toBe(true);
+   });
+
+});
 
 
 

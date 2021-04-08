@@ -13,7 +13,17 @@ function sayHello (str)
 }
 
 
+// Test driving the isFive Function! yay :D
 
+function isFive (input){
+    if (input === 5){
+        return true;
+    }else if (input === "5"){
+        return false;
+    }else{
+        return 'boolean'
+    }
+}
 
 
 
