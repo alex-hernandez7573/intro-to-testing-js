@@ -41,7 +41,7 @@ describe('isFive',function (){
    it('Should be a defined function', function (){
        expect(typeof isFive).toBe('function');
    });
-   it('Should be returning a boolean no matter what', function (){
+   it('Should be returning a boolean no matter the input', function (){
       expect(isFive()).toBe("boolean");
    });
    it('If passed the string "5", should return false.',function (){
@@ -51,6 +51,39 @@ describe('isFive',function (){
       expect(isFive(5)).toBe(true);
    });
 
+});
+
+describe("isEven", function (){
+   it('Should return a boolean no matter the input',function (){
+      expect(isEven(2)).toBe(); // check this
+        });
+   it ('Should return true when executed with "isEven(2)"',function (){
+      expect(isEven(2)).toBe(true);
+        });
+   it ('Should return true when executed with "isEven(-4)"',function (){
+        expect(isEven(-4)).toBe(true);
+        });
+   it ('Should return false when executed with "isEven(3)"',function (){
+        expect(isEven(3)).toBe(false);
+        });
+    it ('Should return false when executed with "isEven("banana")"',function (){
+        expect(isEven("banana")).toBe(false);
+    });
+    it ('Should return true when executed with "isEven(8)"',function (){
+        expect(isEven(8)).toBe(true);
+    });
+    it ('Should return false when executed with "isEven(Infinity)"',function (){
+        expect(isEven(Infinity)).toBe(false);
+    });
+    it ('Should return false when executed with "isEven(true)"',function (){
+        expect(isEven(true)).toBe(false);
+    });
+    it ('Should return false when executed with "isEven(false)"',function (){
+        expect(isEven(false)).toBe(false);
+    });
+    it ('Should return false when executed with "isEven()"<-- nothing entered',function (){
+        expect(isEven()).toBe(false);
+    });
 });
 
 

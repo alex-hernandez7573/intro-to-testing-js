@@ -25,6 +25,14 @@ function isFive (input){
     }
 }
 
+// moving onto exercises 11, process of for testing and creating an isEven function.
+function  isEven (number) {
+    return parseInt(number) % 2 === 0;
+}
+console.log(isEven(true));
+console.log (isEven(typeof 2));
+
+
 
 
 
